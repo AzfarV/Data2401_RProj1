@@ -15,7 +15,7 @@ library(datasauRus)
 
 ### Exercise 1
 
-(Type your answer to Exercise 1 here. This exercise does not require any R code. **Remove notes like this in your final product**)
+The datasaurus dozen file has 1846 rows. The variables included are dataset,x, and y.
 
 ### Exercise 2
 
