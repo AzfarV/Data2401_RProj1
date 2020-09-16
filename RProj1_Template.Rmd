@@ -1,8 +1,12 @@
 ---
 title: "R Project 1 - Hello R"
 author: "Azfar Vahidy"
-date: "1/23/2020"
-output: html_document
+date: "9/16/2020"
+output: 
+  html_document: 
+    fig_width: 6
+    fig_height: 6
+    highlight: pygments
 ---
 
 ### Load packages
@@ -73,5 +77,15 @@ circle_data %>%
 
 ### Exercise 5
 
+Plotting all datasets with correlation coefficients 
+
 ```{r}
+ggplot(datasaurus_dozen, aes(x = x, y = y, color = dataset))+
+  geom_point()+
+  facet_wrap(~ dataset, ncol = 3)+
+  theme(legend.position = "none")
+datasaurus_dozen %>% 
+  group_by(dataset) %>% 
+  summarize(r = cor(x, y)) %>% 
+  print(13)
 ```
