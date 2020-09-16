@@ -19,8 +19,6 @@ The datasaurus dozen file has 1846 rows. The variables included are dataset,x, a
 
 ### Exercise 2
 
-(The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)
-
 First let's plot the data in the dino dataset:
 
 ```{r plot-dino, fig.height=3, fig.width=6}
