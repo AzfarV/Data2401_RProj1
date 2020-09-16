@@ -19,16 +19,12 @@ The datasaurus dozen file has 1846 rows. The variables included are dataset,x, a
 
 ### Exercise 2
 
-First let's plot the data in the dino dataset:
-
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
-
-And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r cor-dino}
 dino_data %>%
